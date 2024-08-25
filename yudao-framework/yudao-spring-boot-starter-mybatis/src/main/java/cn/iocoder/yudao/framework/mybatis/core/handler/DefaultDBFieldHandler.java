@@ -41,6 +41,10 @@ public class DefaultDBFieldHandler implements MetaObjectHandler {
             if (Objects.nonNull(userId) && Objects.isNull(baseDO.getUpdater())) {
                 baseDO.setUpdater(userId.toString());
             }
+            if (Objects.isNull(userId)) {
+                baseDO.setCreator("");
+                baseDO.setUpdater("");
+            }
         }
     }
 
@@ -57,6 +61,9 @@ public class DefaultDBFieldHandler implements MetaObjectHandler {
         Long userId = WebFrameworkUtils.getLoginUserId();
         if (Objects.nonNull(userId) && Objects.isNull(modifier)) {
             setFieldValByName("updater", userId.toString(), metaObject);
+        }
+        if (Objects.isNull(userId)) {
+            setFieldValByName("updater", "", metaObject);
         }
     }
 }
