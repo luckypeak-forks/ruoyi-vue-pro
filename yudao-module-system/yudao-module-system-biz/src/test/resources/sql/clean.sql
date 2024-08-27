@@ -1,3 +1,4 @@
+DELETE FROM "system_group";
 DELETE FROM "system_dept";
 DELETE FROM "system_dict_data";
 DELETE FROM "system_role";

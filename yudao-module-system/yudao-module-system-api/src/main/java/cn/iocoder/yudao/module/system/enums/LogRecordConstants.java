@@ -1,5 +1,7 @@
 package cn.iocoder.yudao.module.system.enums;
 
+import cn.iocoder.yudao.framework.common.exception.ErrorCode;
+
 /**
  * System 操作日志枚举
  * 目的：统一管理，也减少 Service 里各种“复杂”字符串
@@ -30,4 +32,6 @@ public interface LogRecordConstants {
     String SYSTEM_ROLE_DELETE_SUB_TYPE = "删除角色";
     String SYSTEM_ROLE_DELETE_SUCCESS = "删除了角色【{{#role.name}}】";
 
+    // ========== 用户组 TODO 1002019000 ==========
+    ErrorCode GROUP_NOT_EXISTS = new ErrorCode(1002019000, "用户组不存在");
 }
