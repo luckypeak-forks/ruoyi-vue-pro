@@ -1,3 +1,6 @@
+DELETE FROM "system_student_grade";
+DELETE FROM "system_student_course";
+DELETE FROM "system_student";
 DELETE FROM "system_group";
 DELETE FROM "system_dept";
 DELETE FROM "system_dict_data";

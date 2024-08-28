@@ -32,6 +32,4 @@ public interface LogRecordConstants {
     String SYSTEM_ROLE_DELETE_SUB_TYPE = "删除角色";
     String SYSTEM_ROLE_DELETE_SUCCESS = "删除了角色【{{#role.name}}】";
 
-    // ========== 用户组 TODO 1002019000 ==========
-    ErrorCode GROUP_NOT_EXISTS = new ErrorCode(1002019000, "用户组不存在");
 }
