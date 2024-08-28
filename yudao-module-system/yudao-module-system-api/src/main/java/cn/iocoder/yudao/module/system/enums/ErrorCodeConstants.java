@@ -175,4 +175,12 @@ public interface ErrorCodeConstants {
     // ========== 学生班级 1_002_040_000 ==========
     ErrorCode STUDENT_GRADE_NOT_EXISTS = new ErrorCode(1_002_040_000, "学生班级不存在");
 
+    // ========== 分类 1_002_050_000 ==========
+    ErrorCode CATEGORY_NOT_EXISTS = new ErrorCode(1_002_050_000, "分类不存在");
+    ErrorCode CATEGORY_EXITS_CHILDREN = new ErrorCode(1_002_050_001, "存在存在子分类，无法删除");
+    ErrorCode CATEGORY_PARENT_NOT_EXITS = new ErrorCode(1_002_050_002,"父级分类不存在");
+    ErrorCode CATEGORY_PARENT_ERROR = new ErrorCode(1_002_050_003, "不能设置自己为父分类");
+    ErrorCode CATEGORY_NAME_DUPLICATE = new ErrorCode(1_002_050_004, "已经存在该名字的分类");
+    ErrorCode CATEGORY_PARENT_IS_CHILD = new ErrorCode(1_002_050_005, "不能设置自己的子Category为父Category");
+
 }

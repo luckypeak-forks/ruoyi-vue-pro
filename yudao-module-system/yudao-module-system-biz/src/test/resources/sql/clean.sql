@@ -1,3 +1,4 @@
+DELETE FROM "system_category";
 DELETE FROM "system_student_grade";
 DELETE FROM "system_student_course";
 DELETE FROM "system_student";
